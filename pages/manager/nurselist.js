@@ -27,9 +27,9 @@ export default function NurseList() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
-  useEffect(() => {
-    console.log(router)
-  },[])
+  // useEffect(() => {
+  //   console.log(router)
+  // },[])
 
   return (
     <div className="bg-white">
