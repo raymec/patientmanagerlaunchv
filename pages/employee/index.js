@@ -1,11 +1,8 @@
-import { Inter } from "@next/font/google";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Calendar from "../../components/calender";
 import Modal from "../../components/modal"; 
 import ModalSchedule from "../../components/modalSchedule"; 
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
