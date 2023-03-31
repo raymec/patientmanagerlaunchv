@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
 
-const nurseForm = ({setEditPatient, editPatient}) => {
+const NurseForm = ({setEditPatient, editPatient}) => {
   const router = useRouter();
 
     const handleChange = (e) => {
@@ -323,4 +323,4 @@ const nurseForm = ({setEditPatient, editPatient}) => {
     )
 }
 
-export default nurseForm;
+export default NurseForm;
