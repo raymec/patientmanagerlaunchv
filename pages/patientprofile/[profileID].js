@@ -29,7 +29,7 @@ export default function PatientProfile() {
         .catch((err) => console.log(err));
   }, []);
 
-  if (window !== "undefined") {
+  if (typeof window !== "undefined") {
   return (
     <div className="bg-white">
       <main className="pb-8">

@@ -33,7 +33,7 @@ export default function Example() {
   };
   
   useEffect(() => {
-    if(window !== 'undefined'){
+    if(typeof window !== 'undefined'){
       const patient = JSON.parse(sessionStorage.getItem('patient')); 
       setEditPatient(patient); 
     }

@@ -15,7 +15,7 @@ export default function Charts() {
   };
 
   useEffect(() => {
-    if (window !== "undefined") {
+    if (typeof window !== "undefined") {
       fetchPatientChart()
         .catch((err) => console.log(err));
     }
