@@ -39,9 +39,7 @@ export default function PatientProfile() {
               Patient
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Lorem officia duis sunt ut pariatur sit ut ullamco. Eu
-              exercitation Lorem qui deserunt nulla officia exercitation amet
-              quis nulla.
+              All relevant information
             </p>
           </div>
           <div className="mt-4 overflow-hidden max-w-xl mx-auto bg-white shadow sm:rounded-lg">

@@ -31,12 +31,10 @@ export default function Charts() {
           </div>
           <div className="mx-auto max-w-xl">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Patient
+              Charts
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Lorem officia duis sunt ut pariatur sit ut ullamco. Eu
-              exercitation Lorem qui deserunt nulla officia exercitation amet
-              quis nulla.
+              All relevant information
             </p>
           </div>
           <div className="overflow-hidden max-w-4xl mx-auto bg-white shadow sm:rounded-lg">

@@ -261,7 +261,7 @@ const NurseForm = ({setEditPatient, editPatient}) => {
                 </div>
               </div>
 
-              <div>
+              {/* <div>
                 <label
                   htmlFor="ORDERS"
                   className="block text-sm font-medium text-gray-700"
@@ -279,7 +279,7 @@ const NurseForm = ({setEditPatient, editPatient}) => {
                     defaultValue={editPatient.ORDERS}
                   />
                 </div>
-              </div>
+              </div> */}
 
               <div>
                 <label
