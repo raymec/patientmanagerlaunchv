@@ -91,10 +91,10 @@ export default function PatientProfile() {
                 </div>
                 <div className="py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5 sm:px-6">
                   <dt className="text-sm font-medium text-gray-500">
-                    EXTRA TESTING SECTION
+                    Plan of care
                   </dt>
                   <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-                    {`${patientData[0]?.FIRST} ${patientData[0]?.LAST}`}
+                    {`${patientData[0]?.ORDERS}`}
                   </dd>
                 </div>
               </dl>
