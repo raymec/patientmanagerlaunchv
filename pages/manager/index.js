@@ -49,12 +49,23 @@ export default function Home() {
     );
   }
 
+  const logout = () => {
+    sessionStorage.removeItem("staff"); 
+    router.push(
+      {
+        pathname: "/login",
+      },
+      undefined,
+      { shallow: true }
+    );
+  };
+
   return (
     <div className="isolate bg-white">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"></div>
       <div className="px-6 pt-6 lg:px-8">
         <nav className="flex items-center justify-between" aria-label="Global">
-          <div className="flex lg:hidden">
+          {/* <div className="flex lg:hidden">
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -62,6 +73,19 @@ export default function Home() {
             >
               <span className="sr-only">Open main menu</span>
             </button>
+          </div> */}
+          <div className="flex ml-auto">
+            {typeof window !== "undefined" ? (
+              <button
+                type="button"
+                className="-m-2.5 bg- flex items-center justify-center rounded-md p-2.5 text-white bg-indigo-700 focus"
+                onClick={logout}
+              >
+                Log out
+              </button>
+            ) : (
+              ""
+            )}
           </div>
         </nav>
       </div>

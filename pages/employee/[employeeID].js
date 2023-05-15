@@ -33,6 +33,17 @@ export default function Home() {
     );
   };
 
+  const logout = () => {
+    sessionStorage.removeItem("staff"); 
+    router.push(
+      {
+        pathname: "/login",
+      },
+      undefined,
+      { shallow: true }
+    );
+  };
+
   return (
     <div className="isolate bg-white">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"></div>
@@ -43,6 +54,17 @@ export default function Home() {
               WELCOME
             </h2>
           </div>
+          {typeof window !== "undefined" ? (
+              <button
+                type="button"
+                className="-m-2.5 bg- flex items-center justify-center rounded-md p-2.5 text-white bg-indigo-700 focus"
+                onClick={logout}
+              >
+                Log out
+              </button>
+            ) : (
+              ""
+            )}
         </div>
       </div>
       <main>
