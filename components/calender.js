@@ -187,7 +187,7 @@ export default function Calendar() {
                                 : "hidden"
                             )}
                           >
-                            {`${orders.LAST} ${orders.ORDERS}`}
+                            {`${orders.LAST}`}
                           </time>
                         </a>
                       </li>
@@ -217,7 +217,7 @@ export default function Calendar() {
                                 : "hidden"
                             )}
                           >
-                            {`${sched.TIME} ${sched.LAST} ${sched.NURSE}`}
+                            {`${sched.LAST} ${sched.NURSE}`}
                           </time>
                         </a>
                       </li>
